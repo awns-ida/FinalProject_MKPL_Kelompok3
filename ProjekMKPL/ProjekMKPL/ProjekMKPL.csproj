@@ -60,6 +60,12 @@
     <Compile Include="DaftarBuku.Designer.cs">
       <DependentUpon>DaftarBuku.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBuku.Designer.cs">
+      <DependentUpon>EditBuku.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DaftarBuku.resx">
       <DependentUpon>DaftarBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBuku.resx">
+      <DependentUpon>EditBuku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

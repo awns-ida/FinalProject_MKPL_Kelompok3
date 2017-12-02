@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjekMKPL
 {
-    public partial class tambahAnggota : Form
+    public partial class EditBuku : Form
     {
-        public tambahAnggota()
+        public EditBuku()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
