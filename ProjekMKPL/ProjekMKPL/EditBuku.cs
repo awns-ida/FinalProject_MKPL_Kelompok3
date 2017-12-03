@@ -16,5 +16,17 @@ namespace ProjekMKPL
         {
             InitializeComponent();
         }
+    
+        public EditBuku(DaftarBuku parent, String id)
+        {
+            InitializeComponent();
+        }
+
+
+        private void btSimpan_Click1()
+        {
+
+        }
     }
+
 }

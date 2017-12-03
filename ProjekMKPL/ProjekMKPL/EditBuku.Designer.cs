@@ -71,7 +71,6 @@
             this.btSimpan.TabIndex = 44;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = true;
-            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
             // tbNomorSeri
             // 
