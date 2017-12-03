@@ -42,26 +42,28 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rbDeskripsi = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbHalaman = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btBatal
             // 
-            this.btBatal.Location = new System.Drawing.Point(163, 277);
+            this.btBatal.Location = new System.Drawing.Point(163, 300);
             this.btBatal.Name = "btBatal";
             this.btBatal.Size = new System.Drawing.Size(75, 23);
             this.btBatal.TabIndex = 31;
             this.btBatal.Text = "Batal";
             this.btBatal.UseVisualStyleBackColor = true;
-            this.btBatal.Click += new System.EventHandler(this.button2_Click);
             // 
             // btSimpan
             // 
-            this.btSimpan.Location = new System.Drawing.Point(333, 277);
+            this.btSimpan.Location = new System.Drawing.Point(333, 300);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(75, 23);
             this.btSimpan.TabIndex = 30;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = true;
+            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
             // tbNomorSeri
             // 
@@ -102,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(60, 189);
+            this.label6.Location = new System.Drawing.Point(60, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 18);
             this.label6.TabIndex = 21;
@@ -157,15 +159,31 @@
             this.label1.Size = new System.Drawing.Size(43, 18);
             this.label1.TabIndex = 16;
             this.label1.Text = "Judul";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // rbDeskripsi
             // 
-            this.rbDeskripsi.Location = new System.Drawing.Point(163, 190);
+            this.rbDeskripsi.Location = new System.Drawing.Point(163, 213);
             this.rbDeskripsi.Name = "rbDeskripsi";
             this.rbDeskripsi.Size = new System.Drawing.Size(245, 73);
             this.rbDeskripsi.TabIndex = 32;
             this.rbDeskripsi.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(60, 186);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 18);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Halaman";
+            // 
+            // tbHalaman
+            // 
+            this.tbHalaman.Location = new System.Drawing.Point(163, 184);
+            this.tbHalaman.Name = "tbHalaman";
+            this.tbHalaman.Size = new System.Drawing.Size(245, 20);
+            this.tbHalaman.TabIndex = 27;
             // 
             // tambahBuku
             // 
@@ -176,12 +194,14 @@
             this.Controls.Add(this.rbDeskripsi);
             this.Controls.Add(this.btBatal);
             this.Controls.Add(this.btSimpan);
+            this.Controls.Add(this.tbHalaman);
             this.Controls.Add(this.tbNomorSeri);
             this.Controls.Add(this.tbTahunTerbit);
             this.Controls.Add(this.tbPengarang);
             this.Controls.Add(this.tbPenerbit);
             this.Controls.Add(this.tbJudul);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -210,5 +230,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox rbDeskripsi;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbHalaman;
     }
 }
