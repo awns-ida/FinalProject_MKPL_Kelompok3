@@ -20,6 +20,11 @@ namespace ProjekMKPL
         public DaftarBuku()
         {
             InitializeComponent();
+            this.refresh_data();                       
+        }
+
+        private void refresh_data()
+        {
 
             MySqlConnection conn = this.makeDatabaseConnection();
 
@@ -48,7 +53,12 @@ namespace ProjekMKPL
             {
                 MessageBox.Show(ex.Message);
             }
-                        
+        }
+
+        public void show_and_refresh()
+        {
+            this.Show();
+            this.refresh_data();
         }
 
         public MySqlConnection makeDatabaseConnection()
@@ -78,7 +88,7 @@ namespace ProjekMKPL
             if (dgvBuku.CurrentRow != null)
             {
                 String id = this.dgvBuku.SelectedRows[0].Cells[0].Value.ToString();
-
+                
                 formEditBuku = new EditBuku(this, id);
                 formEditBuku.Show();
                 this.Hide();
@@ -87,6 +97,48 @@ namespace ProjekMKPL
             else
             {
                 MessageBox.Show("pilih buku yang akan diupdate");
+            }
+
+        }
+
+        private void btHapusBuku_Click(object sender, EventArgs e)
+        {
+            if (dgvBuku.CurrentRow != null)
+            {
+                String id = this.dgvBuku.SelectedRows[0].Cells[0].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data buku dengan id " + id, "Info", MessageBoxButtons.YesNo);
+
+
+                if (dr == DialogResult.Yes)
+                {
+                    MySqlConnection conn = this.makeDatabaseConnection();
+
+                    try
+                    {
+                        conn.Open();
+
+                        String sql = "DELETE FROM buku WHERE ID_BUKU = " + id;
+
+                        MySqlCommand command = new MySqlCommand(sql, conn);
+
+                        int affectedRows = command.ExecuteNonQuery();//nonquery karena tidak mengambil data tapi mengirimkan data
+                        this.refresh_data();
+
+                        conn.Close();
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("pilih buku yang akan dihapus");
             }
 
         }

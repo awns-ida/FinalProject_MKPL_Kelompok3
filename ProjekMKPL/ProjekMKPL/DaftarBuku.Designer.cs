@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvBuku = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btHapusBuku = new System.Windows.Forms.Button();
             this.btTambahBuku = new System.Windows.Forms.Button();
             this.btEditBuku = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuku)).BeginInit();
@@ -44,14 +44,15 @@
             this.dgvBuku.Size = new System.Drawing.Size(516, 273);
             this.dgvBuku.TabIndex = 0;
             // 
-            // button1
+            // btHapusBuku
             // 
-            this.button1.Location = new System.Drawing.Point(567, 139);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Hapus Buku";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btHapusBuku.Location = new System.Drawing.Point(567, 139);
+            this.btHapusBuku.Name = "btHapusBuku";
+            this.btHapusBuku.Size = new System.Drawing.Size(85, 23);
+            this.btHapusBuku.TabIndex = 1;
+            this.btHapusBuku.Text = "Hapus Buku";
+            this.btHapusBuku.UseVisualStyleBackColor = true;
+            this.btHapusBuku.Click += new System.EventHandler(this.btHapusBuku_Click);
             // 
             // btTambahBuku
             // 
@@ -80,7 +81,7 @@
             this.ClientSize = new System.Drawing.Size(703, 373);
             this.Controls.Add(this.btEditBuku);
             this.Controls.Add(this.btTambahBuku);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btHapusBuku);
             this.Controls.Add(this.dgvBuku);
             this.Name = "DaftarBuku";
             this.Text = "Daftar Buku";
@@ -92,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvBuku;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btHapusBuku;
         private System.Windows.Forms.Button btTambahBuku;
         private System.Windows.Forms.Button btEditBuku;
     }
