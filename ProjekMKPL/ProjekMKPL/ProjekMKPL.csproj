@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Daftar Anggota.cs">
+    <Compile Include="DaftarAnggota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Daftar Anggota.Designer.cs">
-      <DependentUpon>Daftar Anggota.cs</DependentUpon>
+    <Compile Include="DaftarAnggota.Designer.cs">
+      <DependentUpon>DaftarAnggota.cs</DependentUpon>
     </Compile>
     <Compile Include="DaftarBuku.cs">
       <SubType>Form</SubType>
@@ -92,8 +92,8 @@
     <Compile Include="tambahBuku.Designer.cs">
       <DependentUpon>tambahBuku.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Daftar Anggota.resx">
-      <DependentUpon>Daftar Anggota.cs</DependentUpon>
+    <EmbeddedResource Include="DaftarAnggota.resx">
+      <DependentUpon>DaftarAnggota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DaftarBuku.resx">
       <DependentUpon>DaftarBuku.cs</DependentUpon>

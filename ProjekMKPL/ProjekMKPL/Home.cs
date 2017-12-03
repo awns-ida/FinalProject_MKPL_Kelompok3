@@ -19,7 +19,7 @@ namespace ProjekMKPL
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Daftar_Anggota da = new Daftar_Anggota();
+            DaftarAnggota da = new DaftarAnggota();
             da.Show();
             this.Hide();
         }

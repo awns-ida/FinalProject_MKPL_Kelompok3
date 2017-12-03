@@ -1,6 +1,6 @@
 ﻿namespace ProjekMKPL
 {
-    partial class Daftar_Anggota
+    partial class DaftarAnggota
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Daftar_Anggota));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DaftarAnggota));
             this.dataGridViewAnggota = new System.Windows.Forms.DataGridView();
             this.buttonTambahAnggota = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,7 +43,6 @@
             this.dataGridViewAnggota.Name = "dataGridViewAnggota";
             this.dataGridViewAnggota.Size = new System.Drawing.Size(463, 240);
             this.dataGridViewAnggota.TabIndex = 0;
-            this.dataGridViewAnggota.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAnggota_CellContentClick);
             // 
             // buttonTambahAnggota
             // 
@@ -53,7 +52,7 @@
             this.buttonTambahAnggota.TabIndex = 1;
             this.buttonTambahAnggota.Text = "Tambah Anggota ";
             this.buttonTambahAnggota.UseVisualStyleBackColor = true;
-            this.buttonTambahAnggota.Click += new System.EventHandler(this.button1_Click);
+            this.buttonTambahAnggota.Click += new System.EventHandler(this.buttonTambahAnggota_Click_1);
             // 
             // pictureBox1
             // 
@@ -66,7 +65,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Daftar_Anggota
+            // DaftarAnggota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -75,7 +74,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonTambahAnggota);
             this.Controls.Add(this.dataGridViewAnggota);
-            this.Name = "Daftar_Anggota";
+            this.Name = "DaftarAnggota";
             this.Text = "Daftar Anggota";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnggota)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
