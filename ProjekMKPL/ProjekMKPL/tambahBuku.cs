@@ -66,15 +66,21 @@ namespace ProjekMKPL
 
                     conn.Close();
 
-                    MessageBox.Show("data berhasil disimpan");
+                    DialogResult d = MessageBox.Show("data berhasil disimpan", "", MessageBoxButtons.OK);
+                    if (d == DialogResult.OK)
+                    {
+                        tbJudul.Text = "";
+                        tbPengarang.Text = "";
+                        tbNomorSeri.Text = "";
+                        tbPenerbit.Text = "";
+                        tbHalaman.Text = "";
+                        rbDeskripsi.Text = "";
+                        tbTahunTerbit.Text = "";
 
-                    tbJudul.Text = "";
-                    tbPengarang.Text = "";
-                    tbNomorSeri.Text = "";
-                    tbPenerbit.Text = "";
-                    tbHalaman.Text = "" ;
-                    rbDeskripsi.Text = "";
-                    tbTahunTerbit.Text = "";
+                        this.Hide();
+                        formParent.refresh_data_buku();
+                        formParent.show_form();
+                    }
 
                 
                 }

@@ -62,6 +62,7 @@
             this.btBatal.TabIndex = 45;
             this.btBatal.Text = "Batal";
             this.btBatal.UseVisualStyleBackColor = true;
+            this.btBatal.Click += new System.EventHandler(this.btBatal_Click);
             // 
             // btSimpan
             // 
@@ -71,6 +72,7 @@
             this.btSimpan.TabIndex = 44;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = true;
+            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
             // tbNomorSeri
             // 
