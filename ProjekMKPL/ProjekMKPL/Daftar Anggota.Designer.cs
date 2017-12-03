@@ -69,7 +69,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Daftar_Anggota";
-            this.Text = "Daftar_Anggota";
+            this.Text = "Daftar Anggota";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
