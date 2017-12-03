@@ -35,15 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxNama = new System.Windows.Forms.TextBox();
+            this.textBoxNim = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxNohp = new System.Windows.Forms.TextBox();
+            this.textBoxJurusan = new System.Windows.Forms.TextBox();
+            this.textBoxFakultas = new System.Windows.Forms.TextBox();
+            this.textBoxAlamat = new System.Windows.Forms.TextBox();
+            this.buttonSimpan = new System.Windows.Forms.Button();
+            this.buttonBatal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -116,73 +116,74 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Alamat";
             // 
-            // textBox1
+            // textBoxNama
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 20);
-            this.textBox1.TabIndex = 7;
+            this.textBoxNama.Location = new System.Drawing.Point(125, 25);
+            this.textBoxNama.Name = "textBoxNama";
+            this.textBoxNama.Size = new System.Drawing.Size(245, 20);
+            this.textBoxNama.TabIndex = 7;
             // 
-            // textBox2
+            // textBoxNim
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBoxNim.Location = new System.Drawing.Point(125, 55);
+            this.textBoxNim.Name = "textBoxNim";
+            this.textBoxNim.Size = new System.Drawing.Size(245, 20);
+            this.textBoxNim.TabIndex = 8;
             // 
-            // textBox3
+            // textBoxEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 20);
-            this.textBox3.TabIndex = 9;
+            this.textBoxEmail.Location = new System.Drawing.Point(125, 86);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(245, 20);
+            this.textBoxEmail.TabIndex = 9;
             // 
-            // textBox4
+            // textBoxNohp
             // 
-            this.textBox4.Location = new System.Drawing.Point(125, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(245, 20);
-            this.textBox4.TabIndex = 10;
+            this.textBoxNohp.Location = new System.Drawing.Point(125, 115);
+            this.textBoxNohp.Name = "textBoxNohp";
+            this.textBoxNohp.Size = new System.Drawing.Size(245, 20);
+            this.textBoxNohp.TabIndex = 10;
             // 
-            // textBox5
+            // textBoxJurusan
             // 
-            this.textBox5.Location = new System.Drawing.Point(125, 144);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(245, 20);
-            this.textBox5.TabIndex = 11;
+            this.textBoxJurusan.Location = new System.Drawing.Point(125, 144);
+            this.textBoxJurusan.Name = "textBoxJurusan";
+            this.textBoxJurusan.Size = new System.Drawing.Size(245, 20);
+            this.textBoxJurusan.TabIndex = 11;
             // 
-            // textBox6
+            // textBoxFakultas
             // 
-            this.textBox6.Location = new System.Drawing.Point(125, 176);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(245, 20);
-            this.textBox6.TabIndex = 12;
+            this.textBoxFakultas.Location = new System.Drawing.Point(125, 176);
+            this.textBoxFakultas.Name = "textBoxFakultas";
+            this.textBoxFakultas.Size = new System.Drawing.Size(245, 20);
+            this.textBoxFakultas.TabIndex = 12;
             // 
-            // textBox7
+            // textBoxAlamat
             // 
-            this.textBox7.Location = new System.Drawing.Point(125, 206);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(245, 20);
-            this.textBox7.TabIndex = 13;
+            this.textBoxAlamat.Location = new System.Drawing.Point(125, 206);
+            this.textBoxAlamat.Name = "textBoxAlamat";
+            this.textBoxAlamat.Size = new System.Drawing.Size(245, 20);
+            this.textBoxAlamat.TabIndex = 13;
             // 
-            // button1
+            // buttonSimpan
             // 
-            this.button1.Location = new System.Drawing.Point(295, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Simpan";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSimpan.Location = new System.Drawing.Point(295, 258);
+            this.buttonSimpan.Name = "buttonSimpan";
+            this.buttonSimpan.Size = new System.Drawing.Size(75, 23);
+            this.buttonSimpan.TabIndex = 14;
+            this.buttonSimpan.Text = "Simpan";
+            this.buttonSimpan.UseVisualStyleBackColor = true;
+            this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click_1);
             // 
-            // button2
+            // buttonBatal
             // 
-            this.button2.Location = new System.Drawing.Point(171, 258);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Batal";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonBatal.Location = new System.Drawing.Point(175, 258);
+            this.buttonBatal.Name = "buttonBatal";
+            this.buttonBatal.Size = new System.Drawing.Size(75, 23);
+            this.buttonBatal.TabIndex = 15;
+            this.buttonBatal.Text = "Batal";
+            this.buttonBatal.UseVisualStyleBackColor = true;
+            this.buttonBatal.Click += new System.EventHandler(this.button2_Click);
             // 
             // tambahAnggota
             // 
@@ -190,15 +191,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(462, 322);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonBatal);
+            this.Controls.Add(this.buttonSimpan);
+            this.Controls.Add(this.textBoxAlamat);
+            this.Controls.Add(this.textBoxFakultas);
+            this.Controls.Add(this.textBoxJurusan);
+            this.Controls.Add(this.textBoxNohp);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxNim);
+            this.Controls.Add(this.textBoxNama);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -222,14 +223,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxNama;
+        private System.Windows.Forms.TextBox textBoxNim;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxNohp;
+        private System.Windows.Forms.TextBox textBoxJurusan;
+        private System.Windows.Forms.TextBox textBoxFakultas;
+        private System.Windows.Forms.TextBox textBoxAlamat;
+        private System.Windows.Forms.Button buttonSimpan;
+        private System.Windows.Forms.Button buttonBatal;
     }
 }

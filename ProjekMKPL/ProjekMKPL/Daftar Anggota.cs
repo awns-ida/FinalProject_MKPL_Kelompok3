@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ProjekMKPL
 {
@@ -15,6 +16,22 @@ namespace ProjekMKPL
         public Daftar_Anggota()
         {
             InitializeComponent();
+
+            MySqlConnection conn = this.makeDatabaseConnection();
+        }
+
+        public MySqlConnection makeDatabaseConnection()
+        {
+            MySqlConnection connection = new MySqlConnection();
+            String connString =
+                "Server=127.0.0.1;" +
+                "uid=root;" +
+                "pwd=;" +
+                "database=perpus";
+
+            connection.ConnectionString = connString;
+
+            return connection;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -29,6 +46,11 @@ namespace ProjekMKPL
             tambahAnggota tang = new tambahAnggota();
             tang.Show();
             this.Hide();
+        }
+
+        private void dataGridViewAnggota_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

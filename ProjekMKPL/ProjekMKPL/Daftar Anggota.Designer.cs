@@ -29,30 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Daftar_Anggota));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewAnggota = new System.Windows.Forms.DataGridView();
+            this.buttonTambahAnggota = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnggota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewAnggota
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 76);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(463, 240);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewAnggota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAnggota.Location = new System.Drawing.Point(22, 76);
+            this.dataGridViewAnggota.Name = "dataGridViewAnggota";
+            this.dataGridViewAnggota.Size = new System.Drawing.Size(463, 240);
+            this.dataGridViewAnggota.TabIndex = 0;
+            this.dataGridViewAnggota.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAnggota_CellContentClick);
             // 
-            // button1
+            // buttonTambahAnggota
             // 
-            this.button1.Location = new System.Drawing.Point(513, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tambah Anggota ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonTambahAnggota.Location = new System.Drawing.Point(513, 102);
+            this.buttonTambahAnggota.Name = "buttonTambahAnggota";
+            this.buttonTambahAnggota.Size = new System.Drawing.Size(105, 23);
+            this.buttonTambahAnggota.TabIndex = 1;
+            this.buttonTambahAnggota.Text = "Tambah Anggota ";
+            this.buttonTambahAnggota.UseVisualStyleBackColor = true;
+            this.buttonTambahAnggota.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -72,11 +73,11 @@
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(647, 345);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonTambahAnggota);
+            this.Controls.Add(this.dataGridViewAnggota);
             this.Name = "Daftar_Anggota";
             this.Text = "Daftar Anggota";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnggota)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -84,8 +85,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewAnggota;
+        private System.Windows.Forms.Button buttonTambahAnggota;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
